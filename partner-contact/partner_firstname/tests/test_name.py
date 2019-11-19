@@ -48,7 +48,7 @@ class PartnerContactCase(BaseCase):
         self.original.name = "  newfïrstname  newlästname  "
 
         # Need this to refresh the ``name`` field
-        self.original.invalidate_cache(["name"])
+        self.original.invalidate_cache()
 
 
 class PartnerCompanyCase(BaseCase):
@@ -70,16 +70,16 @@ class PartnerCompanyCase(BaseCase):
 
 class UserCase(PartnerContactCase):
     def create_original(self):
-        name = "{} {}".format(self.firstname, self.lastname)
+        name = "%s %s" % (self.firstname, self.lastname)
 
         # Cannot create users if ``mail`` is installed
         if self.mail_installed():
             self.original = self.env.ref("base.user_demo")
             self.original.name = name
         else:
-            self.original = self.env["res.users"].create(
-                {"name": name, "login": "firstnametest@example.com"}
-            )
+            self.original = self.env["res.users"].create({
+                "name": name,
+                "login": "firstnametest@example.com"})
 
     def test_copy(self):
         """Copy the partner and compare the result."""

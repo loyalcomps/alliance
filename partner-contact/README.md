@@ -1,6 +1,6 @@
-[![Runbot Status](https://runbot.odoo-community.org/runbot/badge/flat/134/13.0.svg)](https://runbot.odoo-community.org/runbot/repo/github-com-oca-partner-contact-134)
-[![Build Status](https://travis-ci.org/OCA/partner-contact.svg?branch=13.0)](https://travis-ci.org/OCA/partner-contact)
-[![Coverage Status](https://coveralls.io/repos/OCA/partner-contact/badge.svg?branch=13.0)](https://coveralls.io/r/OCA/partner-contact?branch=13.0)
+[![Runbot Status](https://runbot.odoo-community.org/runbot/badge/flat/134/12.0.svg)](https://runbot.odoo-community.org/runbot/repo/github-com-oca-partner-contact-134)
+[![Build Status](https://travis-ci.org/OCA/partner-contact.svg?branch=12.0)](https://travis-ci.org/OCA/partner-contact)
+[![Coverage Status](https://coveralls.io/repos/OCA/partner-contact/badge.svg?branch=12.0)](https://coveralls.io/r/OCA/partner-contact?branch=12.0)
 
 OCA partner and contact management modules for Odoo
 ===================================================
@@ -18,12 +18,12 @@ Here you should find community modules that:
 
 Translation Status
 ------------------
-[![Transifex Status](https://www.transifex.com/projects/p/OCA-partner-contact-13-0/chart/image_png)](https://www.transifex.com/projects/p/OCA-partner-contact-13-0)
+[![Transifex Status](https://www.transifex.com/projects/p/OCA-partner-contact-12-0/chart/image_png)](https://www.transifex.com/projects/p/OCA-partner-contact-12-0)
 
 ----
 
-OCA, or the Odoo Community Association, is a nonprofit organization whose
-mission is to support the collaborative development of Odoo features and
+OCA, or the Odoo Community Association, is a nonprofit organization whose 
+mission is to support the collaborative development of Odoo features and 
 promote its widespread use.
 
 http://odoo-community.org/

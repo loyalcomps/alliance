@@ -16,4 +16,3 @@
 * Pedro Baeza <pedro.baeza@serviciosbaeza.com>
 * Dave Lasley <dave@laslabs.com>
 * Graeme Gellatly <graeme@o4sb.com>
-* Laurent Mignon <laurent.mignon@acsone.eu>

@@ -6,14 +6,12 @@
 To have more accurate results, remove the ``mail`` module before testing.
 """
 from odoo.tests.common import TransactionCase
-
-from .. import exceptions as ex
 from .base import MailInstalled
+from .. import exceptions as ex
 
 
 class CompanyCase(TransactionCase):
     """Test ``res.partner`` when it is a company."""
-
     model = "res.partner"
     context = {"default_is_company": True}
 
@@ -37,13 +35,11 @@ class CompanyCase(TransactionCase):
 
 class PersonCase(CompanyCase):
     """Test ``res.partner`` when it is a person."""
-
-    context = {"default_is_company": False, "default_type": "contact"}
+    context = {"default_is_company": False, "default_type": 'contact'}
 
 
 class UserCase(CompanyCase, MailInstalled):
     """Test ``res.users``."""
-
     model = "res.users"
     context = {"default_login": "user@example.com"}
 
@@ -62,12 +58,16 @@ class AddressCase(TransactionCase):
 
     def test_new_empty_invoice_address(self):
         """Create an invoice patner without name."""
-        self.original = self.env["res.partner"].create(
-            {"is_company": False, "type": "invoice", "lastname": "", "firstname": ""}
-        )
+        self.original = self.env["res.partner"].create({
+            "is_company": False,
+            "type": 'invoice',
+            "lastname": "",
+            "firstname": ""})
 
     def test_new_empty_shipping_address(self):
         """Create an shipping patner without name."""
-        self.original = self.env["res.partner"].create(
-            {"is_company": False, "type": "delivery", "lastname": "", "firstname": ""}
-        )
+        self.original = self.env["res.partner"].create({
+            "is_company": False,
+            "type": 'delivery',
+            "lastname": "",
+            "firstname": ""})
